@@ -36,8 +36,6 @@ async function fetchWeatherData(cityInput) {
 
 function weatherData() {
     fetchWeatherData(cityInput).then((json) => {
-    console.log(json);
-
     //calculating the current date and time
     const cityTime = utc + (1000 * json.timezone);
     const nd = new Date(cityTime);
@@ -462,6 +460,7 @@ function weatherData() {
 
 weatherData();
 
+//onclick method for cities on the panel
 function getEventTarget(e) {
     e = e || window.event;
     return e.target || e.srcElement; 
@@ -483,7 +482,6 @@ searchForm.addEventListener('submit', (e) => {
         alert('Please enter a city');
     } else {
         cityInput = searchBar.value;
-        console.log(cityInput);
         searchBar.value = '';
 
         weatherData();
