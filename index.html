@@ -1,0 +1,107 @@
+<!--The icon assets are not used for this project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Weather today</title>
+</head>
+<body>
+    <div class="weather-app" id="weather-app">
+        <div class="container">
+            <h3 class="brand">The weather</h3>
+            <div>
+                <h1 class="temp" id="temp">temp&#176;</h1>
+                <div class="city-time">
+                    <h1 class="name" id="name">city</h1>
+                    <small>
+                        <span class="date" id="date">date</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="./Assets/icons/day/113.png" class="icon" id="icon" width="50" height="50">
+                    <span class="condition" id="condition">condition</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form class="locationInput" id="locationInput">
+                <input type="text" class="search" id="search" placeholder="Search location...">
+                <button type="submit" class="submit" id="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <ul id="cities" class="cities">
+                <li class="city">Denver</li>
+                <li class="city">London</li>
+                <li class="city">Nairobi</li>
+                <li class="city">Tokyo</li>
+            </ul>
+            <ul class="details">
+                <h4>Weather details</h4>
+                <!--The lights will indicate cloud cover, humidity level and wind speed-->
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud">
+                        <p id="cloud"></p>
+                        <div class="center">
+                            <div id="bit9" type="div" class="bitbtn circle"></div>
+                            <div id="bit8" type="div" class="bitbtn circle"></div>
+                            <div id="bit7" type="div" class="bitbtn circle"></div>
+                            <div id="bit6" type="div" class="bitbtn circle"></div>
+                            <div id="bit5" type="div" class="bitbtn circle"></div>
+                            <div id="bit4" type="div" class="bitbtn circle"></div>
+                            <div id="bit3" type="div" class="bitbtn circle"></div>
+                            <div id="bit2" type="div" class="bitbtn circle"></div>
+                            <div id="bit1" type="div" class="bitbtn circle"></div>
+                            <div id="bit0" type="div" class="bitbtn circle"></div>
+                            <div style="height:20px; clear:both"></div>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="humidity">
+                        <p id="humidity"></p>
+                        <div class="center">
+                            <div id="bit19" type="div" class="bitbtn circle"></div>
+                            <div id="bit18" type="div" class="bitbtn circle"></div>
+                            <div id="bit17" type="div" class="bitbtn circle"></div>
+                            <div id="bit16" type="div" class="bitbtn circle"></div>
+                            <div id="bit15" type="div" class="bitbtn circle"></div>
+                            <div id="bit14" type="div" class="bitbtn circle"></div>
+                            <div id="bit13" type="div" class="bitbtn circle"></div>
+                            <div id="bit12" type="div" class="bitbtn circle"></div>
+                            <div id="bit11" type="div" class="bitbtn circle"></div>
+                            <div id="bit10" type="div" class="bitbtn circle"></div>
+                            <div style="height:20px; clear:both"></div>
+                        </div>
+                    </span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="wind">
+                        <p id="wind"></p>
+                        <div class="center">
+                            <div id="bit29" type="div" class="bitbtn circle"></div>
+                            <div id="bit28" type="div" class="bitbtn circle"></div>
+                            <div id="bit27" type="div" class="bitbtn circle"></div>
+                            <div id="bit26" type="div" class="bitbtn circle"></div>
+                            <div id="bit25" type="div" class="bitbtn circle"></div>
+                            <div id="bit24" type="div" class="bitbtn circle"></div>
+                            <div id="bit23" type="div" class="bitbtn circle"></div>
+                            <div id="bit22" type="div" class="bitbtn circle"></div>
+                            <div id="bit21" type="div" class="bitbtn circle"></div>
+                            <div id="bit20" type="div" class="bitbtn circle"></div>
+                            <div style="height:20px; clear:both"></div>
+                        </div>
+                    </span>
+                </li>
+                <!--End of lights-->
+            </ul>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
